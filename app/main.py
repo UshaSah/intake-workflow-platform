@@ -2,6 +2,7 @@ from fastapi import FastAPI
 
 from app.database import Base, engine
 from app.models.patient import Patient
+from app.models.idempotency_key import IdempotencyKey
 from app.routers.patient import router as patients_router
 
 
