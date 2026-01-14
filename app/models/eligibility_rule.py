@@ -61,7 +61,7 @@ class EligibilityRule(Base):
     )
     
     #flexible values: number/string/list/object
-    value_Json: Mapped[Any] = mapped_column(JSONB, nullable=False)
+    value_Json: Mapped[any] = mapped_column(JSONB, nullable=False)
     
     is_inclusion: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)
     
