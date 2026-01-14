@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-
+from app.models.trial import Trial
 from app.database import Base, engine
 from app.models.patient import Patient
 from app.models.idempotency_key import IdempotencyKey
